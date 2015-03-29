@@ -1,17 +1,12 @@
 Teste de Conhecimentos – Analista Desenvolvedor 
 
-QUESTÂO 1 - 
-Resposta no arquivo teste1.php
+QUESTÂO 1 - Resposta no arquivo teste1.php
 
-QUESTÃO 2 - 
-Resposta no arquivo teste2.php
+QUESTÃO 2 - Resposta no arquivo teste2.php
 
-QUESTÃO 3 -  
-Resposta no arquivo teste3.php
+QUESTÃO 3 - Resposta no arquivo teste3.php
 
-QUESTÃO 4
-
-Resposta na pasta teste4
+QUESTÃO 4 - Resposta na pasta teste4
 
 -- Istruções para Rodar o Teste 4 --
 
