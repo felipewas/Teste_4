@@ -1,4 +1,3 @@
-# prova_bdr
 Teste de Conhecimentos – Analista Desenvolvedor 
 
 Istruções para Rodar o Teste 4
