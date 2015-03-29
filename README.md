@@ -1,6 +1,19 @@
 Teste de Conhecimentos – Analista Desenvolvedor 
 
-Istruções para Rodar o Teste 4
+QUESTÂO 1 
+Resposta no arquivo teste1.php
+
+QUESTÃO 2
+Resposta no arquivo teste2.php
+
+QUESTÃO 3
+Resposta no arquivo teste3.php
+
+QUESTÃO 4
+
+Resposta na pasta teste4
+
+-- Istruções para Rodar o Teste 4 --
 
 1 - Criar a Tabela na base de dados para o aplicativo; Importar o arquivo tabela_tarefas.sql do diretorio raiz.
 
