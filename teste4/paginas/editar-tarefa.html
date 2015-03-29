@@ -1,0 +1,75 @@
+﻿<style type="text/css">
+  .form-horizontal input.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+  }
+
+  .form-horizontal input.ng-valid.ng-dirty {
+    border-color: #78FA89;
+  }
+</style>
+<div class="view">
+    <div class="container">
+        <div class="row">
+        <nav class= "navbar navbar-default" role= "navigation" >
+        <div class= "navbar-header" >
+        <a class= "navbar-brand" href= "#/tarefas"><i class="glyphicon glyphicon-th-large"></i>Listar Tarefas </a>
+        <a ng-show="tarefa._id" class= "navbar-brand" href= "#/edit-tarefa/0"><i class="glyphicon glyphicon-plus"></i> Nova Tarefa </a>
+        </div>
+        </nav>
+        <header>
+            <h3>{{title}}</h3>
+        </header>
+        Voce está editando a tarefa número: {{tarefa._id}}
+<br />
+<br />
+        <div class="col-md-12">
+
+<form role="form" name="myForm" class="form-horizontal">
+<div class="row">
+<div class= "form-group" ng-class="{error: myForm.name.$invalid}">
+    <label class= "col-md-2"> Título</label>
+    <div class="col-md-4">
+    <input name="titulo" ng-model="tarefa.titulo" type= "text" class= "form-control" placeholder="Titulo da Tarefa" required/>
+    <span ng-show="myForm.name.$dirty && myForm.name.$invalid" class="help-inline">Name Required</span>
+    </div>
+</div>
+<div class= "form-group">
+    <label class= "col-md-2">Descrição</label>
+    <div class="col-md-4">
+      <label for="descricao"></label>
+    <textarea name="descricao" rows="5" required class= "form-control" placeholder="Descrição da Tarefa" ng-model="tarefa.descricao" type= "textarea"/></textarea>
+    </div>
+</div>
+<div class= "form-group">
+    <label class= "col-md-2">Prioridade</label>
+    <div class="col-md-4">
+      <p>
+        <label>
+        <input type="radio" name="prioridade" value="Alta" id="prioridade_0" class= "form-control" ng-model="tarefa.prioridade" />
+        Alta</label>
+        <label>
+          <input type="radio" name="prioridade" value="Media" id="prioridade_1" class= "form-control" ng-model="tarefa.prioridade"/>
+        Média</label>
+        <label>
+          <input type="radio" name="prioridade" value="Normal" id="prioridade_2" class= "form-control" ng-model="tarefa.prioridade"/>
+        Normal</label>
+      <br />
+  </p>
+    </div>
+</div>
+<div class= "form-group">
+    <label class= "col-md-2"></label>
+    <div class="col-md-4">
+    <a href="#/" class="btn">Cancelar</a>
+        <button ng-click="saveTarefa(tarefa);" 
+                ng-disabled="isClean() || myForm.$invalid"
+                class="btn btn-primary">{{buttonText}}</button>
+        <button ng-click="deleteTarefa(tarefa)"
+                ng-show="tarefa._id" class="btn btn-warning">Apagar</button>
+    </div>
+</div>
+</div>
+</form>
+        </div></div>
+    </div>
+</div>
